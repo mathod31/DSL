@@ -1,0 +1,6 @@
+FSM sample
+initstate s1
+finalstate s3
+state s2
+transition t1 s1->s2 : trigger: next
+transition t2 s2->s3 : trigger: next

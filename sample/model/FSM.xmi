@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sample:FSM
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:sample="http://www.example.org/sample"
+    xsi:schemaLocation="http://www.example.org/sample sample.ecore">
+  <transition
+      name="t1"
+      trigger="next"
+      StateTo="//@state.0"
+      stateFrom="//@state.1"/>
+  <transition
+      name="t2"
+      trigger="next"
+      StateTo="//@state.2"
+      stateFrom="//@state.0"/>
+  <state name="s2"/>
+  <state xsi:type="sample:Initstate"
+      name="s1"/>
+  <state xsi:type="sample:Finalstate"
+      name="s3"/>
+</sample:FSM>
